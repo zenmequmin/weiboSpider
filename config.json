@@ -1,11 +1,11 @@
 {
 	"user_id_list": ["1669879400"],
-    "filter": 1,
-    "since_date": "2018-01-01",
-    "write_mode": ["csv", "txt"],
-    "pic_download": 1,
-    "video_download": 1,
-    "cookie": "your cookie",
+    "filter": 0,
+    "since_date": "2010-01-01",
+    "write_mode": ["csv"],
+    "pic_download": 0,
+    "video_download": 0,
+    "cookie": "ALF=1584541835; _T_WM=18673428137; WEIBOCN_WM=3349; H5_wentry=H5; backURL=https%3A%2F%2Fweibo.cn%2F%3Fsudaref%3Dlogin.sina.com.cn%26display%3D0%26retcode%3D6102; SCF=AvwxXYQYQHh8ZKjvNcCkCbj9gcYkb2owVo-17PAqsgJIzZ1EnU35P-UOwJ2QTG3pxdyaLUQAxcXmDBE5VvObwP8.; SUB=_2A25zTs0zDeRhGeNI7FUZ-SjNzDuIHXVQsNN7rDV6PUJbktANLVT3kW1NSDtAzn8zibr9g279zrjfXbdGvD2Qot0y; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWCL4sO_.34TTf-4xiUWRJu5JpX5KzhUgL.Fo-cS0MR1KqpS0M2dJLoIfX41h-LxKBLB.zL1K.LxKqLBo5L1KBLxKMLBKnL12zLxK-LB.2L12qLxK-L1K2L1KnLxKML1-2L1hBLxKML1KBL1-qLxKqLBoBLB.zLxKqL1KMLBK-LxK-LBonLBont; SUHB=0d4-jtZjTebwGH; SSOLoginState=1581956451; MLOGIN=1; M_WEIBOCN_PARAMS=luicode%3D20000174",
     "mysql_config": {
         "host": "localhost",
         "port": 3306,
@@ -14,3 +14,5 @@
         "charset": "utf8mb4"
     }
 }
+
+
