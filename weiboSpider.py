@@ -1079,10 +1079,17 @@ class Weibo(object):
                 print('*' * 100)
                 if self.user_config_file_path:
                     self.update_user_config_file(self.user_config_file_path)
+                csv_fp = f"weibo/{self.user['nickname']}/{self.user['id']}.csv"
+                print(f"词云生成：{self.user['nickname']}")
+                general_eda(csv_fp)
         except Exception as e:
             print('Error: ', e)
             traceback.print_exc()
 
+
+def general_eda(csv_fp):
+    cmd = f'python -u EDA/eda_api.py {csv_fp}'
+    os.system(cmd)
 
 def main():
     try:
