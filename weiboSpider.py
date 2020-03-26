@@ -646,6 +646,7 @@ class Weibo(object):
             if is_exist:
                 for i in range(0, len(info) - 2):
                     weibo = self.get_one_weibo(info[i])
+                    weibo['id'] = f"https://www.weibo.com/{self.user_config['user_uri']}/{weibo['id']}"
                     if weibo:
                         if weibo['id'] in self.weibo_id_list:
                             continue
