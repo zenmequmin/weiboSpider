@@ -544,7 +544,7 @@ class Weibo(object):
 
     def handle_download(self, file_type, file_dir, urls, w):
         """处理下载相关操作"""
-        file_prefix = w['publish_time'][:11].replace('-', '') + '_' + w['id']
+        file_prefix = w['publish_time'][:11].replace('-', '').strip() + '_' + w['id'].rsplit('/')[-1]
         if file_type == 'img':
             if ',' in urls:
                 url_list = urls.split(',')
@@ -556,7 +556,7 @@ class Weibo(object):
             else:
                 file_suffix = urls[urls.rfind('.'):]
                 file_name = file_prefix + file_suffix
-                file_path = file_dir + os.sep + file_name
+                file_path = file_dir + os.sep + file_name  
                 self.download_one_file(urls, file_path, file_type, w['id'])
         else:
             file_suffix = '.mp4'
